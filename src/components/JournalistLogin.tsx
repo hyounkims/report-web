@@ -31,12 +31,12 @@ export default function JournalistLogin() {
 
       {/* Main Content */}
       <main className="flex-1 flex items-center justify-center px-8 py-12">
-        <div className="max-w-md">
+        <div className="w-full max-w-md">
           {/* Login Card */}
-          <div className="bg-white rounded-3xl shadow-sm border border-gray-200 p-10">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
             <div className="mb-8">
-              <h1 className="text-2xl font-semibold text-gray-900 mb-2">기자용 계정 로그인</h1>
-              <p className="text-sm text-gray-600">
+              <h1 className="text-gray-900 mb-2">기자용 계정 로그인</h1>
+              <p className="text-gray-600">
                 제보된 사건·사고 영상을 확인하고 구매하세요.
               </p>
             </div>
@@ -44,40 +44,40 @@ export default function JournalistLogin() {
             {/* Login Form */}
             <form className="space-y-5" onSubmit={handleSubmit}>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">이메일</label>
+                <label className="block text-gray-700 mb-2">이메일</label>
                 <input
                   type="email"
                   placeholder="example@newscompany.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 text-sm rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                   required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">비밀번호</label>
+                <label className="block text-gray-700 mb-2">비밀번호</label>
                 <input
                   type="password"
                   placeholder="비밀번호를 입력하세요"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full px-4 py-3 text-sm rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                   required
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-black text-white text-base font-medium py-3.5 px-4 rounded-xl hover:bg-gray-800 transition-colors mt-6"
+                className="w-full bg-black text-white py-3.5 px-4 rounded-xl hover:bg-gray-800 transition-colors"
               >
                 로그인
               </button>
 
-              <div className="text-center pt-2">
+              <div className="text-center">
                 <button
                   type="button"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
                 >
                   비밀번호를 잊으셨나요?
                 </button>
@@ -89,7 +89,7 @@ export default function JournalistLogin() {
 
       {/* Footer */}
       <footer className="px-8 py-6">
-        <p className="text-center text-sm text-gray-500">
+        <p className="text-center text-gray-500">
           계정이 필요하시면 관리자에게 문의하세요.
         </p>
       </footer>
